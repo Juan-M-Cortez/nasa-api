@@ -71,10 +71,11 @@ export default function Navbar(props) {
 
         <Divider />
 
-        {/*🔽Drop down button start🔽*/}
+        {/*🔽Drop down button start🔽
         <NavItem>
         <i className="arrow down"></i>
         </NavItem>
+        */}
         {/*🔽Drop down button end🔽*/}
       </Nav>
 

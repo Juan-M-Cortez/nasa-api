@@ -17,11 +17,18 @@ export default function DropDown(props) {
 
     // Formating the drop down dates and structuring it
     let datesAccordion = [];
+
     function dropDownDates() {
         let countDown = dd;
         for (let index = 1; index <= 10; index++) {
+
+            console.log('today: ', today);
+            // conc
             let valueDate = `${mm}/${countDown}/${yyyy}`;
             --countDown;
+            // date=2022-08-31
+
+            console.log('mm + countdown(dd) + yyyy: ', `${mm}/${countDown}/${yyyy}`);
 
             datesAccordion.push(
             <DropdownItem key={index} value={valueDate} onClick={(event) => TenDayPick(event)}>
